@@ -262,6 +262,37 @@ footer p {
 }
 
 
+
+/*.carousel {
+  width: 100%;
+  display: flex;
+  background-color: yellow;
+  overflow: hidden;
+}
+
+.media {
+  background-color: blue;
+  height: 425px;
+  width: 100%;
+
+}
+
+.data {
+  background-color: red;
+  height: 425px;
+  width: 100%;
+}
+
+.voice {
+  background-color: black;
+  height: 425px;
+  width: 100%;
+}*/
+
+
+
+
+
 /* Media QUERIES */
 @media (min-width: 470px) {
 
