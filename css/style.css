@@ -134,7 +134,7 @@ main a {
   width: 100%;
 }
 
-.scroll-down svg {
+.scroll-down img {
   width: 40px;
 }
 
@@ -248,7 +248,7 @@ footer {
   margin: 0 15px;
 }
 
-.scroll-up svg {
+.scroll-up img {
   margin-top: 15px;
   width: 40px;
   max-height: 40px;
