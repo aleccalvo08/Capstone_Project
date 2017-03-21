@@ -69,6 +69,57 @@ img {
   justify-content: center;
 }
 
+/*NAV OVERLAY CSS*/
+.main__nav__overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  background-color: #2C2C2C;
+  transition: 0.5s;
+}
+
+.main__nav__overlay-show {
+  z-index: 1;
+  opacity: 1;
+}
+
+.main__nav__overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.main__nav__overlay-content a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 18;
+  font-weight: 100;
+  margin-bottom: 30px;
+  width: 100%;
+  transition: .5s;
+}
+
+.main__nav__overlay-content a:hover{
+  font-size: 20px;
+  color: #935351;
+  font-weight: bold;
+}
+
+.main__nav__overlay-close{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+
 .main__nav {
   display: flex;
   width: 100%;
@@ -89,6 +140,19 @@ img {
 .main__nav__popup {
   display: none;
 }
+
+.main__video{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 220px 0;
+    display: none;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
 
 .main__heading {
   letter-spacing: 2.53px;
@@ -185,11 +249,34 @@ img {
 .carousel__heading {
   letter-spacing: 6px;
   margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.carousel__panels {
+  padding-top: 80px;
+  height: 450px;
+  background-color: grey;
 }
 
 .carousel__media {
-  padding-top: 80px;
-  height: 450px;
+  background:
+  url('../assets/images/media.jpg');
+  background-size: cover;
+  background-position-x: -250px;
+}
+
+.carousel__data {
+  background:
+  url('../assets/images/data.jpg');
+  background-size: cover;
+  background-position-x: -200px;
+}
+
+.carousel__voice {
+  background:
+  url('../assets/images/voice.jpg');
+  background-size: cover;
+  background-position-x: -180px;
 }
 
 
@@ -201,6 +288,7 @@ img {
   overflow: hidden;
   margin: 0 20px;
   margin-bottom: 35px;
+  color: #FFFFFF;
 }
 
 .carousel__text__data-height {
@@ -275,4 +363,11 @@ height: 95px;
   font-size: 10px;
   letter-spacing: .8px;
   margin-bottom: 30px;
+}
+
+@media (min-width: 321px) {
+    .main__video{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
 }
