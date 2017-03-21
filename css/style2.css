@@ -41,10 +41,16 @@ html {
 }
 
 body {
+  font-size: 12px;
   color: #D2D2D2;
   text-align: center;
   font-family: 'brandon', serif;
   background-color: #323232;
+}
+
+h1 {
+  font-size: 32px;
+  font-family: 'Adam', serif;
 }
 
 img {
@@ -85,10 +91,188 @@ img {
 }
 
 .main__heading {
-  font-family: 'Adam', serif;
-  font-size: 32px;
   letter-spacing: 2.53px;
   font-weight: normal;
   padding: 0;
   padding-bottom: 10px;
+}
+
+.main__subheading {
+  font-family: 'brandon', serif;
+  font-size: 13px;
+  font-weight: 100;
+  padding-bottom: 45px;
+  letter-spacing: .40px;
+  width: 100%;
+}
+
+.main__video-text {
+  display: flex;
+  padding: 15px 40px;
+  border: .75px solid white;
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 170px;
+}
+
+.main__scroll-down {
+  height: 70px;
+  width: 100%;
+}
+
+.main__scroll-down-img {
+  width: 40px;
+}
+
+.about-us {
+  display: flex;
+  margin: 0 20px;
+  margin-top: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-us__icons {
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.about-us__our-data-icon {
+  background:
+  url('../assets/icons/data-icon.png');
+  max-width: 51.40px;
+  height: 50px;
+  background-size: cover;
+}
+
+.about-us__our-relationship-icon {
+  background:
+  url('../assets/icons/relationship-icon.png');
+  max-width: 114px;
+  height: 50px;
+  background-size: cover;
+}
+.about-us__our-talents-icon {
+  background:
+  url('../assets/icons/talents-icon.png');
+  max-width: 54px;
+  height: 50px;
+  background-size: cover;
+}
+
+.about-us__heading {
+  font-family: 'brandon',serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #D2D2D2;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.about-us__text {
+  margin-bottom: 50px;
+  line-height: 15px;
+}
+
+.carousel__container {
+  margin-bottom: 20px;
+}
+
+
+.carousel__heading {
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+
+.carousel__media {
+  padding-top: 80px;
+  height: 450px;
+}
+
+
+.carousel__text {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  height: 120px;
+  overflow: hidden;
+  margin: 0 20px;
+  margin-bottom: 35px;
+}
+
+.carousel__text__data-height {
+height: 95px;
+}
+
+.carousel__cta {
+  padding: 10px 35px;
+  background-color: #935351;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  font-weight: 300;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact__heading {
+  margin-top: 50px;
+  font-size: 24px;
+  letter-spacing: 3px;
+
+}
+
+.contact__sub-heading {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.contact__text {
+  font-size: 10px;
+  letter-spacing: .5px;
+  line-height: 16px;
+}
+
+.contact__social-item {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.contact__social-link {
+  font-size: 22px;
+  color: #DFDFDF;
+}
+
+.fa {
+  margin: 0 15px;
+}
+
+.footer__line {
+  margin: 15px auto;
+  background-color: #D8D8D8;
+  height: 1px;
+  max-width: 202px;
+}
+
+.footer__button-icon {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 40px;
+  max-height: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+}
+
+.footer__text{
+  font-size: 10px;
+  letter-spacing: .8px;
+  margin-bottom: 30px;
 }

@@ -7,6 +7,9 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/fotorama.css">
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/fotorama.js"></script>
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <meta name="description" content="Jones Website">
@@ -32,11 +35,7 @@
           <li class="main__nav__popup-item">MORE</li>
         </ul>
       </nav>
-      <div class="btich">
-        <h1 class="main__heading">JONES MEDIA</h1>
-      </div>
-
-<<<<<<< HEAD
+      <h1 class="main__heading">JONES MEDIA</h1>
       <h2 class="main__subheading">We're not your typical media network.</h2>
       <a href="#" class="main__video-text">
         Play Video
@@ -45,12 +44,12 @@
         </div>
       </a>
       <div class="main__scroll-down">
-        <img class="main__scroll-down-img" src="assets/icons/scrolldown.svg" alt="">
+        <img src="assets/icons/scrolldown.svg" class="main__scroll-down-img" alt="">
       </div>
     </main>
     <section class="about-us">
       <div class="about-us__our-data">
-        <i class="about-us__our-data-icon"></i>
+        <div class="about-us__icons about-us__our-data-icon"></div>
         <h1 class="about-us__heading">
           OUR DATA
         </h1>
@@ -61,7 +60,7 @@
         </p>
       </div>
       <div class="about-us__our-relationship">
-        <i class="about-us__our-relationship-icon"></i>
+        <div class="about-us__icons about-us__our-relationship-icon"></div>
         <h1 class="about-us__heading">
           OUR RELATIONSHIP
         </h1>
@@ -72,78 +71,19 @@
         </p>
       </div>
       <div class="about-us__our-talents">
-        <i class="about-us__our-talents-icon"></i>
+        <div class="about-us__icons about-us__our-talents-icon"></div>
         <h1 class="about-us__heading">
           OUR TALENTS
         </h1>
         <p class="about-us__text">
           Morbi bibendum mi a sem egestas, vitae tincidunt mauris facilisis. Morbi vestibulum lorem at est
           faucibus luctus maecenas mollis ligula.
-=======
-
-        <nav>
-          <ul>
-            <li>HOME</li>
-            <li>DATA</li>
-            <li>MEDIA</li>
-            <li>VOICE</li>
-            <li>MORE</li>
-          </ul>
-        </nav>
-
-
-        <h1>WE ARE JONES</h1>
-        <h2>We're not your typical media network.</h2>
-        <a href="#" class=" ">
-          Play Video
-          <div class="play-icon">
-            <img src="assets/icons/triangle.svg" alt="">
-
-          </div>
-        </a>
-
-        <div class="scroll-down">
-          <img src="assets/icons/scrolldown.svg" alt="">
-        </div>
-
-      </main>
-
-
-<!-- END OF LANDING PAGE -->
-
-<!-- THREE PANELS SECTION -->
-
-    <section class="three-panels">
-
-      <i class="data-icon"></i>
-      <h1>OUR DATA</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lobortis ullamcorper.
-        Aenean porttitor mauris in tellus sagittis, et imperdiet sem imperdiet. Nulla facilisi. Integer
-        bibendum lorem eros, a tristique enim tincidunt in. Cras in feugiat mi. Nulla
-      </p>
-
-      <i class="relationship-icon"></i>
-      <h1>OUR RELATIONSHIP</h1>
-        <p> tristique ipsum sit amet tellus bibendum faucibus. Vivamus sit amet porttitor elit, iaculis
-          hendrerit nunc. Sed sagittis, arcu eu vulputate fermentum, felis felis facilisis augue, quis
-          varius augue velit ut ex. Morbi bibendum mi a sem egestas, vitae tincidunt mauris
-        </p>
-
-      <i class="talents-icon"></i>
-      <h1>OUR TALENTS</h1>
-        <p>Morbi bibendum mi a sem egestas, vitae tincidunt mauris facilisis. Morbi vestibulum lorem at est
-          faucibus luctus. Maecenas mollis ligula at dolor ultricies auctor. Praesent purus purus, bibendum a
-          condimentum eget, luctus in nisi.
-<<<<<<< HEAD
->>>>>>> parent of e01928b... Last Change
-=======
->>>>>>> parent of e01928b... Last Change
         </p>
       </div>
     </section>
 
     <section class="carousel">
-      <div class="carousel__container">
+      <div class="carousel__container fotorama" data-width="100%" data-ratio="320/425" data-arrows="false" data-autoplay="3000">
         <div class="carousel__media">
           <h1 class="carousel__heading">
             MEDIA
@@ -152,7 +92,7 @@
             At JONES we pride ourselves in providing our clients with the most
             efficient media and content solutions across digital, social and
             emerging platforms.
-
+            <br>
             Our capabilities and strategic expertise ensure that every client is
             given a custom solution designed to deliver both their brand message
             and results.
@@ -165,7 +105,7 @@
           <h1 class="carousel__heading">
             DATA
           </h1>
-          <p class="carousel__text">
+          <p class="carousel__text carousel__text__data-height">
             Leveraging the best in technology to precisely and effectively reach
             premium audiences within safe, transparent and controlled media
             environments.
@@ -183,7 +123,7 @@
             Aligning brands with ambassadors, social media personalities,
             experts and celebrity endorsement are critical components to
             amplifying your message and driving discernible consumer action.
-
+            <br>
             JONES employs an exclusive influencer amplification formula to
             identify the most efficient mix of these elements to deliver the
             brand message and drive a desired audience behaviour.
