@@ -57,6 +57,11 @@ img {
   max-width: 100%;
 }
 
+svg {
+  width: 100%;
+  height: 100%;
+}
+
 
 .main {
   background:
@@ -68,6 +73,27 @@ img {
   flex-wrap: wrap;
   justify-content: center;
 }
+/*VIDEO OVERLAY CSS*/
+  .main__video__overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    overflow-y: hidden;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .main__video {
+    position: relative;
+    top: 30%;
+    margin-top: 30px;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
 
 /*NAV OVERLAY CSS*/
 .main__nav__overlay {
@@ -80,9 +106,14 @@ img {
   top: 0;
   background-color: #2C2C2C;
   transition: 0.5s;
+  overflow-y: hidden;
 }
 
-.main__nav__overlay-show {
+.no-scroll {
+  overflow: hidden;
+}
+
+.overlay-show {
   z-index: 1;
   opacity: 1;
 }
@@ -115,10 +146,13 @@ img {
 
 .main__nav__overlay-close{
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 20px;
+  right: 15px;
+  height: auto;
+  width: 40px;
 }
 
+/*NAV OVERLAY END CSS*/
 
 .main__nav {
   display: flex;
@@ -140,19 +174,6 @@ img {
 .main__nav__popup {
   display: none;
 }
-
-.main__video{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.75);
-    padding: 220px 0;
-    display: none;
-}
-
-video {
-  width: 100%;
-  height: auto;
-}
-
 
 .main__heading {
   letter-spacing: 2.53px;
@@ -213,12 +234,10 @@ video {
 }
 
 .about-us__our-relationship-icon {
-  background:
-  url('../assets/icons/relationship-icon.png');
   max-width: 114px;
   height: 50px;
-  background-size: cover;
 }
+
 .about-us__our-talents-icon {
   background:
   url('../assets/icons/talents-icon.png');

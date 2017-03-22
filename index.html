@@ -18,7 +18,7 @@
 
   </head>
 
-  <body>
+  <body id="home">
     <main class="main">
       <header class="main__nav">
         <img class="main__nav-logo" src="assets/images/jones-logo.png" alt="">
@@ -29,14 +29,14 @@
       <!-- THE OVERLAY -->
       <div id="myNav" class="main__nav__overlay">
         <div class="main__nav__overlay-content">
-          <a href="#" class="main__nav__overlay-items">HOME</a>
-          <a href="#" class="main__nav__overlay-items">MEDIA</a>
-          <a href="#" class="main__nav__overlay-items">DATA</a>
+          <a href="#home" class="main__nav__overlay-items">HOME</a>
+          <a href="#carousel" class="main__nav__overlay-items">MEDIA</a>
+          <a href="#data" class="main__nav__overlay-items">DATA</a>
           <a href="#" class="main__nav__overlay-items">VOICE</a>
           <a href="#" class="main__nav__overlay-items">MORE</a>
         </div>
         <a href="#" class="main__nav__overlay-close">
-          <img src="assets/icons/minus.png" alt="">
+          <img src="assets/icons/cross.svg" alt="">
         </a>
       </div>
       <!-- END OF OVERLAY -->
@@ -49,8 +49,11 @@
           <li class="main__nav__popup-item">MORE</li>
         </ul>
       </nav>
-      <div class="main__video">
-        <video src="assets/videos/jones.mov" type="video/mov"></video>
+      <div class="main__video__overlay">
+        <div class="main__video">
+          <video id="videoJones" src="assets/videos/jones.mov" type="video/mov" controls="">
+          </video>
+        </div>
       </div>
       <h1 class="main__heading">JONES MEDIA</h1>
       <h2 class="main__subheading">We're not your typical media network.</h2>
@@ -77,7 +80,19 @@
         </p>
       </div>
       <div class="about-us__our-relationship">
-        <div class="about-us__icons about-us__our-relationship-icon"></div>
+        <div class="about-us__icons about-us__our-relationship-icon">
+          <svg id="General" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 40.01">
+            <defs>
+              <style>
+                .cls-1{fill:#D2D2D2;}
+              </style>
+            </defs>
+            <title>
+              relation
+            </title>
+            <path class="cls-1" d="M36.74 29.21s-3.7-.86-3.7-4.6c0-3.29 1.77-4.45 2.36-5.25 0 0 1.21-1 .4-4.33 1.35-1.81 1.66-5 .2-8.4a7.65 7.65 0 0 0-3.28-4 6.1 6.1 0 0 0-2.94-.68 9.75 9.75 0 0 0-3.79.8c.26.5.5 1 .74 1.58 0 .08.06.16.09.24a7.73 7.73 0 0 1 3-.62 4.1 4.1 0 0 1 2 .44 5.58 5.58 0 0 1 2.4 3c1.22 2.82.89 5.25 0 6.41a2 2 0 0 0-.34 1.67 4 4 0 0 1 .08 2.49l-.15.18-.28.31a8.21 8.21 0 0 0-2.47 6.12 6.76 6.76 0 0 0 5.13 6.52c2.64.92 5.2 2.07 5.73 4.87h-6.33a10.18 10.18 0 0 1 .37 2h7.14a.88.88 0 0 0 .91-.9C44 31.7 39.09 30 36.74 29.21zm-10.7 1a5.34 5.34 0 0 1-4.06-5.11 7.82 7.82 0 0 1 2.31-5.83s1.32-1.14.44-4.81c1.48-2 1.75-5.56.15-9.33-1-2.36-1.9-3.66-3.25-4.41a6.63 6.63 0 0 0-3.23-.76 10 10 0 0 0-4.77 1.21c-2.27 1-3.79 1.92-5.22 5.42-1.16 2.84.24 6.13 1 7.74-.89 3.67.34 4.93.34 4.93a7.82 7.82 0 0 1 2.31 5.83A5.34 5.34 0 0 1 8 30.2c-2.58.91-8 2.77-8 8.77a1 1 0 0 0 1 1h32a1 1 0 0 0 1-1c0-5.97-5.38-7.83-8-8.73zm-24 7.77c.49-3.42 3.54-4.81 6.47-5.85a7.27 7.27 0 0 0 5.49-7 9.34 9.34 0 0 0-2.42-6.67c-.11-.12-.2-.23-.28-.34l-.07-.09c-.07-.14-.47-1 .05-3.19a2 2 0 0 0-.12-1.29c-.5-1.09-1.81-4-.93-6.16 1.19-2.92 2.25-3.5 4.18-4.34l.28-.15a8.17 8.17 0 0 1 3.69-.89 4.62 4.62 0 0 1 2.26.51c.72.4 1.4 1.14 2.38 3.44 1.39 3.26 1 6 .08 7.36a2 2 0 0 0-.33 1.65c.49 2 .13 2.82.05 3l-.17.2c-.08.1-.17.21-.28.34a9.34 9.34 0 0 0-2.42 6.67 7.27 7.27 0 0 0 5.49 7c2.9 1 6 2.42 6.47 5.85H2.07z" id="Users_1_2x.png" data-name="Users 1@2x.png"/>
+          </svg>
+        </div>
         <h1 class="about-us__heading">
           OUR RELATIONSHIP
         </h1>
@@ -99,7 +114,7 @@
       </div>
     </section>
 
-    <section class="carousel">
+    <section class="carousel" id="carousel">
       <div class="carousel__container fotorama" data-width="100%" data-ratio="320/425" data-arrows="false" data-autoplay="3000">
         <div class="carousel__panels carousel__media">
           <h1 class="carousel__heading">
