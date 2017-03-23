@@ -11,6 +11,9 @@
     <script src="js/jquery-3.2.0.min.js"></script>
     <script src="js/fotorama.js"></script>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <meta name="description" content="Jones Website">
     <meta name="author" content="Alec Calvo">
@@ -19,6 +22,13 @@
   </head>
 
   <body id="home">
+    <div class="loading">
+      <div class="letter-j letters">J</div>
+        <div class="letter-o letters">O</div>
+          <div class="letter-n letters">N</div>
+            <div class="letter-e letters">E</div>
+              <div class="letter-s letters">S</div>
+    </div>
     <main class="main">
       <header class="main__nav">
         <img class="main__nav-logo" src="assets/images/jones-logo.png" alt="">
@@ -55,7 +65,7 @@
           <a href="#carousel" class="main__nav__overlay-items">MEDIA</a>
           <a href="#data" class="main__nav__overlay-items">DATA</a>
           <a href="#" class="main__nav__overlay-items">VOICE</a>
-          <a href="#" class="main__nav__overlay-items">MORE</a>
+          <a href="#contact" class="main__nav__overlay-items">CONTACTS</a>
         </div>
         <a href="#" class="main__nav__overlay-close">
           <img src="assets/icons/cross.svg" alt="">
@@ -193,7 +203,7 @@
 
 <!-- CONTACTS SECTION -->
 
-    <section class="contact">
+    <section id="contact" class="contact">
       <h1 class="contact__heading">
         CONTACT US
       </h1>

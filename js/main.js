@@ -1,5 +1,13 @@
 $(function() {
 
+  // $(window).load(function() {
+  //   $(".loading").fadeOut("slow");;
+  // });
+
+  setTimeout(function(){
+    $(".loading").fadeOut("slow")
+  }, 2500)
+
   $('.main__sub-button').click(openNav)
 
   $('.main__nav-button').click(openNav)
