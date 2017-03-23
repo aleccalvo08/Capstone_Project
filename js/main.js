@@ -6,7 +6,7 @@ $(function() {
 
   setTimeout(function(){
     $(".loading").fadeOut("slow")
-  }, 2500)
+  }, 2200)
 
   $('.main__sub-button').click(openNav)
 
@@ -57,6 +57,30 @@ $(function() {
       $('#subNav').removeClass('sub__nav-show')
     }
 
+  })
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#aboutData').removeClass('hide-about')
+    } else {
+      $('#aboutData').addClass('hide-about')
+    }
+  })
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+      $('#aboutRelationship').removeClass('hide-about')
+    } else {
+      $('#aboutRelationship').addClass('hide-about')
+    }
+  })
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 350) {
+      $('#aboutTalent').removeClass('hide-about')
+    } else {
+      $('#aboutTalent').addClass('hide-about')
+    }
   })
 
   $('.footer__button-icon').click(function() {

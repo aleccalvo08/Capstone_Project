@@ -81,15 +81,15 @@ svg {
 
 @keyframes updown {
   0% {transform: translateY(0px);}
-  10% {transform: translateY(-5px);}
+  /*10% {transform: translateY(-5px);}
   20% {transform: translateY(-10px);}
   30% {transform: translateY(-15px);}
-  40% {transform: translateY(-20px);}
-  50% {transform: translateY(-20px);}
-  60% {transform: translateY(-20px);}
+  40% {transform: translateY(-18px);}*/
+  50% {transform: translateY(-10px);}
+  /*60% {transform: translateY(-18px);}
   70% {transform: translateY(-15px);}
   80% {transform: translateY(-10px);}
-  90% {transform: translateY(-5px);}
+  90% {transform: translateY(-5px);}*/
   100% {transform: translateY(0px);}
 }
 
@@ -97,7 +97,7 @@ svg {
   font-size: 50px;
   font-family: 'adam', serif;
   overflow-y: hidden;
-  animation: updown 1.5s infinite;
+  animation: updown 1.7s;
 }
 
 .letter-o {
@@ -305,6 +305,22 @@ svg {
   width: 45px;
 }
 
+.hide-about {
+  opacity: 0;
+}
+
+.about-us__our-data {
+  transition: .75s
+}
+
+.about-us__our-relationship {
+  transition: .75s
+}
+
+.about-us__our-talents {
+  transition: .75s
+}
+
 .about-us {
   display: flex;
   margin: 0 20px;
@@ -356,7 +372,6 @@ svg {
 .carousel__container {
   margin-bottom: 20px;
 }
-
 
 .carousel__heading {
   letter-spacing: 6px;
