@@ -95,6 +95,35 @@ svg {
     height: auto;
   }
 
+  /*MAIN SUB NAV*/
+  .main__sub-nav {
+    background-color: #323232;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 20px;
+    top: -20%;
+    transition: .5s;
+  }
+
+  .sub__nav-show {
+    top: 0;
+    z-index: 10;
+
+  }
+
+  .main__sub-logo {
+    max-width: 130px;
+  }
+
+  .main__sub-button {
+    max-width: 30px;
+  }
+
+
+  /*SUB NAV ENDS*/
+
 /*NAV OVERLAY CSS*/
 .main__nav__overlay {
   height: 100%;
@@ -114,7 +143,7 @@ svg {
 }
 
 .overlay-show {
-  z-index: 1;
+  z-index: 11;
   opacity: 1;
 }
 
@@ -355,6 +384,12 @@ height: 95px;
 .contact__social-link {
   font-size: 22px;
   color: #DFDFDF;
+}
+
+.contact__social-link:hover {
+  color: #935351;
+  font-size: 30px;
+  transition: 0.5s;
 }
 
 .fa {

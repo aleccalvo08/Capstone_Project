@@ -1,5 +1,7 @@
 $(function() {
 
+  $('.main__sub-button').click(openNav)
+
   $('.main__nav-button').click(openNav)
 
   $('.main__nav__overlay-close').click(closeNav)
@@ -36,8 +38,22 @@ $(function() {
 
   $('.main__scroll-down').click(function() {
     $('html, body').animate({
-        scrollTop: $(".about-us").offset().top - 20
+        scrollTop: $(".about-us").offset().top - 100
     }, 1000)
   })
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#subNav').addClass('sub__nav-show')
+    } else {
+      $('#subNav').removeClass('sub__nav-show')
+    }
+
+  })
+
+  $('.footer__button-icon').click(function() {
+    $('html, body').animate({scrollTop: '0px'}, 500)
+  })
+
 
 })
