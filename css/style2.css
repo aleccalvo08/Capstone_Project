@@ -309,6 +309,10 @@ svg {
   opacity: 0;
 }
 
+.main__brand-logos{
+  display: none;
+}
+
 .about-us__our-data {
   transition: .75s
 }
@@ -503,4 +507,56 @@ height: 95px;
       padding-top: 20px;
       padding-bottom: 20px;
     }
+
+    .main {
+      background-position: center;
+    }
 }
+
+@media (min-width: 768px) {
+  .main {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5)), url("../assets/images/hero-image.jpg");
+    background-position: -220px 0;
+    background-size: 1156px 862px;
+  }
+
+  .main__heading {
+    letter-spacing: 6px;
+    font-size: 58px;
+  }
+
+  .main__subheading {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+
+  .main__video-text {
+    letter-spacing: 2px;
+    font-weight: 100;
+    border-radius: 20px;
+  }
+
+  .main__scroll-down {
+    display: none;
+  }
+
+  .main__brand-logos {
+    display: flex;
+    align-items: center;
+  }
+
+  .main__brand-logos img {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    height: 22px;
+    width: auto;
+    padding-left: 40px;
+  }
+
+  .main__brand-logos img:first-of-type {
+    padding-left: 0px;
+    height: 32px;
+    width: auto;
+  }
