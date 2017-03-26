@@ -60,7 +60,7 @@ $(function() {
   })
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 200) {
       $('#aboutData').removeClass('hide-about')
     } else {
       $('#aboutData').addClass('hide-about')
@@ -68,7 +68,7 @@ $(function() {
   })
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 200) {
+    if ($(this).scrollTop() > 300) {
       $('#aboutRelationship').removeClass('hide-about')
     } else {
       $('#aboutRelationship').addClass('hide-about')
@@ -76,7 +76,7 @@ $(function() {
   })
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 350) {
+    if ($(this).scrollTop() > 450) {
       $('#aboutTalent').removeClass('hide-about')
     } else {
       $('#aboutTalent').addClass('hide-about')

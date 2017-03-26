@@ -142,6 +142,7 @@ svg {
     position: relative;
     top: 30%;
     margin-top: 30px;
+    max-width: 720px;
   }
 
   video {
@@ -538,6 +539,23 @@ height: 95px;
     border-radius: 20px;
   }
 
+  .main__video {
+    top: 15%;
+    margin: 0 auto;
+    margin-top: 0px;
+  }
+
+  .main__nav__overlay-content a {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .main__nav__overlay-content a:hover{
+    font-size: 22px;
+    color: #935351;
+    font-weight: bold;
+  }
+
   .main__scroll-down {
     display: none;
   }
@@ -559,4 +577,33 @@ height: 95px;
     padding-left: 0px;
     height: 32px;
     width: auto;
+  }
+
+  .about-us {
+    margin: 0 175px;
+    margin-top: 90px;
+  }
+
+  .about-us__icons {
+    height: 70px;
+    margin-bottom: 50px;
+  }
+
+  .about-us__our-data-icon {
+    max-width: 71px;
+  }
+
+  .about-us__our-talents-icon {
+    max-width: 73.5px;
+  }
+
+  .about-us__heading {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .about-us__text {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 110px;
   }
