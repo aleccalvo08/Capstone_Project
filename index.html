@@ -22,13 +22,13 @@
   </head>
 
   <body id="home">
-    <!-- <div class="loading">
+    <div class="loading">
       <div class="letter-j letters">J</div>
         <div class="letter-o letters">O</div>
           <div class="letter-n letters">N</div>
             <div class="letter-e letters">E</div>
               <div class="letter-s letters">S</div>
-    </div> -->
+    </div>
     <main class="main">
       <header class="main__nav">
         <img class="main__nav-logo" src="assets/images/jones-logo.png" alt="">
@@ -37,11 +37,11 @@
         </div>
         <nav class="main__nav__popup">
           <ul class="main__nav__popup-list">
-            <li class="main__nav__popup-item">HOME</li>
-            <li class="main__nav__popup-item">DATA</li>
-            <li class="main__nav__popup-item">MEDIA</li>
-            <li class="main__nav__popup-item">VOICE</li>
-            <li class="main__nav__popup-item">MORE</li>
+            <li class="main__nav__popup-item"><a href="#">HOME</a></li>
+            <li class="main__nav__popup-item"><a href="#">DATA</a></li>
+            <li class="main__nav__popup-item"><a href="#">MEDIA</a></li>
+            <li class="main__nav__popup-item"><a href="#">VOICE</a></li>
+            <li class="main__nav__popup-item"><a href="#">MORE</a></li>
           </ul>
         </nav>
       </header>
@@ -181,6 +181,10 @@
             Leveraging the best in technology to precisely and effectively reach
             premium audiences within safe, transparent and controlled media
             environments.
+            <br><br>
+            Utilizing data from multiple sources of online search behaviors and
+            offline data, JONES can precisely reach your targeted consumer with
+            standard behavioural attributes yet specializes in different areas.
           </p>
           <a href="#" class="carousel__cta">
             KNOW MORE
@@ -215,40 +219,75 @@
       <h1 class="contact__heading">
         CONTACT US
       </h1>
+      <div class="contact__address">
+        <h2 class="contact__sub-heading">
+          ADDRESS
+        </h2>
+        <p class="contact__text">
+          130 Spadina Ave #202 </br> Toronto ON M5V 1X9
+        </p>
+      </div>
+      <div class="contact__contacts">
+        <h2 class="contact__sub-heading">
+          CONTACTS
+        </h2>
+        <p class="contact__text">
+          info@mrandmrsjones.ca
+        <br>
+          (647) 987 - 7289
+        </p>
+      </div>
+      <div class="contact__social">
+        <h2 class="contact__sub-heading">
+          SOCIAL
+        </h2>
+        <ul class="contact__social-list">
+          <li class="contact__social-item">
+            <a class="contact__social-link" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+          </li>
 
-      <h2 class="contact__sub-heading">
-        ADDRESS
-      </h2>
-      <p class="contact__text">
-        130 Spadina Ave #202 </br> Toronto ON M5V 1X9
-      </p>
-      <h2 class="contact__sub-heading">
-        CONTACTS
-      </h2>
-      <p class="contact__text">
-        info@mrandmrsjones.ca        <br>
-        (647) 987 - 7289
-      </p>
-      <h2 class="contact__sub-heading">
-        SOCIAL
-      </h2>
-      <ul class="contact__social-list">
-        <li class="contact__social-item">
-          <a class="contact__social-link" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-        </li>
+          <li class="contact__social-item">
+            <a class="contact__social-link" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+          </li>
 
-        <li class="contact__social-item">
-          <a class="contact__social-link" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-        </li>
+          <li class="contact__social-item">
+            <a class="contact__social-link" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+          </li>
 
-        <li class="contact__social-item">
-          <a class="contact__social-link" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
-        </li>
+          <li class="contact__social-item">
+            <a class="contact__social-link" href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+          </li>
+        </ul>
+      </div>
 
-        <li class="contact__social-item">
-          <a class="contact__social-link" href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
-        </li>
-      </ul>
+      <div class="form__section">
+        <div class="contact__or">
+          <div class="contact__or-lineone">
+          </div>
+          <h2 class="contact__or-text">or</h2>
+          <div class="contact__or-linetwo">
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" action="index.html" method="post">
+            <input type="text" placeholder="  name*" name="name"
+            class="form__name form__details">
+            <input type="text" placeholder="  email*" name="email"
+            class="form__email form__details">
+            <input type="text" placeholder="  phone*" name="phone"
+            class="form__phone form__details">
+            <textarea class="form__message" name="message"
+            placeholder="   message*"></textarea>
+            <div class="form__button-container">
+              <button class="form__button" type="button" name="submitButton" form="contactForm">
+                SEND US A MESSAGE
+              </button>
+            </div>
+
+        </form>
+
+      </div>
+
     </section>
 
 <!-- END CONTACTS SECTION -->

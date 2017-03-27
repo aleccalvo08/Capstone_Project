@@ -407,6 +407,11 @@ svg {
   overflow: hidden;
 }
 
+.carousel__data .carousel__text {
+  height: 55px;
+  overflow: hidden;
+}
+
 .carousel__voice .carousel__text {
   height: 75px;
   overflow: hidden;
@@ -508,6 +513,10 @@ svg {
   font-size: 10px;
   letter-spacing: .8px;
   margin-bottom: 30px;
+}
+
+.form__section {
+  display: none;
 }
 
 @media (min-width: 321px) {
@@ -638,6 +647,10 @@ svg {
     height: auto;
   }
 
+  .carousel__data .carousel__text {
+    height: auto;
+  }
+
   .carousel__voice .carousel__text {
     height: auto;
     font-size: 18px;
@@ -669,7 +682,7 @@ svg {
   }
 
   .contact__social-item {
-  margin-bottom: 130px;
+  margin-bottom: 100px;
   }
 
   .contact__social-link {
@@ -721,12 +734,202 @@ svg {
       letter-spacing: 1.5px;
     }
 
+    .main__nav__popup-item a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .main__nav__popup-item a:hover {
+      color: #935351;
+      text-decoration: underline;
+    }
+
     .main__nav__popup-item:last-of-type {
       margin: 0
     }
 
-
     .main__sub-nav {
       display: none;
     }
+
+    .main__heading {
+      font-size: 64px;
+      letter-spacing: 10px;
+    }
+
+    .main__subheading {
+      letter-spacing: 2px;
+    }
+
+    .main__brand-logos img {
+      height: 25px;
+      padding-left: 0;
+      margin-left: 75px;
+      margin-bottom: 70px;
+    }
+
+    .main__brand-logos img:first-of-type {
+      margin-left: 0px;
+      height: 32px;
+      width: auto;
+    }
+
+    .about-us__main-heading {
+      display: block;
+      width: 100%;
+      margin-bottom: 105px;
+    }
+
+    .about-us {
+      margin: 180px 20px;;
+      justify-content: space-between;
+    }
+
+    #aboutData {
+      width: 28%;
+    }
+
+    #aboutRelationship {
+      width: 28%;
+    }
+
+    #aboutTalent {
+      width: 28%;
+    }
+
+    .about-us__text {
+      margin-bottom: 0;
+    }
+
+    .carousel__panels {
+      padding-top: 200px;
+    }
+
+    .carousel__heading {
+      margin-bottom: 50px;
+    }
+
+    .carousel__text {
+      margin: 0 300px;
+      margin-bottom: 75px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .contact__heading {
+      font-size: 48px;
+      letter-spacing: 10px;
+      width: 100%;
+    }
+
+    .contact__sub-heading {
+      font-size: 24px;
+      margin-bottom: 65px;
+    }
+
+    .contact__text {
+      font-size: 16px;
+    }
+
+    .contact__social-link {
+      font-size: 30px;
+    }
+
+    .contact__social-link:hover {
+      font-size: 36px;
+    }
+
+    .contact__or {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact__or-text {
+      font-size: 24px;
+      letter-spacing: 4px;
+      margin: 0 45px;
+    }
+
+    .contact__or-lineone {
+      height: 1px;
+      background-color: white;
+      width: 295px;
+    }
+
+    .contact__or-linetwo {
+      height: 1px;
+      background-color: white;
+      width: 295px;
+    }
+
+    .footer__line {
+      display: none;
+    }
+
+    .contact__form {
+      margin-top: 80px;
+    }
+
+    .form__section {
+      display: block;
+    }
+
+    .form__details {
+      width: 209px;
+      height: 47px;
+      border-radius: 20px;
+      background-color: #E2E2E2;
+      margin: 0 62px;
+      border: 0;
+      color: #323232;
+      font-size: 14px;
+    }
+
+    .form__details:focus{
+      outline: none;
+    }
+
+    .form__message{
+      margin-top: 80px;
+      width: 885px;
+      height: 390px;
+      border-radius: 20px;
+      background-color: #E2E2E2;
+      font-size: 14px;
+      color: #323232;
+    }
+
+    .form__message {
+      outline: none;
+    }
+
+    .form__button-container {
+      width: 100%;
+    }
+
+    .form__button {
+      margin-top: 100px;
+      display: inline-block;
+      background-color: #935351;
+      width: 285px;
+      height: 70px;
+      border-radius: 20px;
+      border: none;
+      color: white;
+      font-size: 12px;
+      letter-spacing: 4px;
+      box-shadow: 0px 3px 12px rgba(0, 0, 0, .5);
+      margin-bottom: 110px;
+    }
+
+    .footer__button-icon {
+      margin-bottom: 60px
+    }
+
   }
