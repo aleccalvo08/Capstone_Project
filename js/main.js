@@ -14,7 +14,9 @@ $(function() {
 
   $('.main__nav__overlay-close').click(closeNav)
 
-  $('.main__nav__overlay-items').click(closeNav)
+  $('.main__nav__overlay-content').on("click", "a", function( event ) {
+    closeNav()
+  })
 
   $('.main__video-text').click(function() {
     $('.main__video__overlay').addClass('overlay-show')
