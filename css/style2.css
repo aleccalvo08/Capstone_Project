@@ -314,6 +314,10 @@ svg {
   display: none;
 }
 
+.about-us__main-heading {
+  display: none;
+}
+
 .about-us__our-data {
   transition: .75s
 }
@@ -566,6 +570,8 @@ svg {
   .main__brand-logos {
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: center;
   }
 
   .main__brand-logos img {
@@ -687,4 +693,40 @@ svg {
   .footer__text {
     font-size: 16px;
     letter-spacing: 2px;
+  }
+
+  @media (min-width: 1024px) {
+    .main {
+      background-position: center;
+      background-size: cover;
+    }
+
+    .main__nav__button-img {
+      display: none;
+    }
+
+    .main__nav__popup {
+      display: flex;
+    }
+
+    .main__nav__popup-list {
+      display: flex;
+      align-items: center;
+    }
+
+    .main__nav__popup-item {
+      margin-right: 30px;
+      font-weight: 100;
+      font-size: 10px;
+      letter-spacing: 1.5px;
+    }
+
+    .main__nav__popup-item:last-of-type {
+      margin: 0
+    }
+
+
+    .main__sub-nav {
+      display: none;
+    }
   }
